@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\array.cpp" />
+    <ClCompile Include="src\box.cpp" />
+    <ClCompile Include="src\capsule.cpp" />
+    <ClCompile Include="src\collision_cylinder_box.cpp" />
+    <ClCompile Include="src\collision_cylinder_plane.cpp" />
+    <ClCompile Include="src\collision_cylinder_sphere.cpp" />
+    <ClCompile Include="src\collision_cylinder_trimesh.cpp" />
+    <ClCompile Include="src\collision_kernel.cpp" />
+    <ClCompile Include="src\collision_libccd.cpp" />
+    <ClCompile Include="src\collision_quadtreespace.cpp" />
+    <ClCompile Include="src\collision_sapspace.cpp" />
+    <ClCompile Include="src\collision_space.cpp" />
+    <ClCompile Include="src\collision_transform.cpp" />
+    <ClCompile Include="src\collision_trimesh_box.cpp" />
+    <ClCompile Include="src\collision_trimesh_ccylinder.cpp" />
+    <ClCompile Include="src\collision_trimesh_disabled.cpp" />
+    <ClCompile Include="src\collision_trimesh_distance.cpp" />
+    <ClCompile Include="src\collision_trimesh_gimpact.cpp" />
+    <ClCompile Include="src\collision_trimesh_opcode.cpp" />
+    <ClCompile Include="src\collision_trimesh_plane.cpp" />
+    <ClCompile Include="src\collision_trimesh_ray.cpp" />
+    <ClCompile Include="src\collision_trimesh_sphere.cpp" />
+    <ClCompile Include="src\collision_trimesh_trimesh.cpp" />
+    <ClCompile Include="src\collision_trimesh_trimesh_new.cpp" />
+    <ClCompile Include="src\collision_util.cpp" />
+    <ClCompile Include="src\convex.cpp" />
+    <ClCompile Include="src\cylinder.cpp" />
+    <ClCompile Include="src\error.cpp" />
+    <ClCompile Include="src\export-dif.cpp" />
+    <ClCompile Include="src\fastdot.c" />
+    <ClCompile Include="src\fastldlt.c" />
+    <ClCompile Include="src\fastlsolve.c" />
+    <ClCompile Include="src\fastltsolve.c" />
+    <ClCompile Include="src\heightfield.cpp" />
+    <ClCompile Include="src\joints\amotor.cpp" />
+    <ClCompile Include="src\joints\ball.cpp" />
+    <ClCompile Include="src\joints\contact.cpp" />
+    <ClCompile Include="src\joints\fixed.cpp" />
+    <ClCompile Include="src\joints\hinge.cpp" />
+    <ClCompile Include="src\joints\hinge2.cpp" />
+    <ClCompile Include="src\joints\joint.cpp" />
+    <ClCompile Include="src\joints\lmotor.cpp" />
+    <ClCompile Include="src\joints\null.cpp" />
+    <ClCompile Include="src\joints\piston.cpp" />
+    <ClCompile Include="src\joints\plane2d.cpp" />
+    <ClCompile Include="src\joints\pr.cpp" />
+    <ClCompile Include="src\joints\pu.cpp" />
+    <ClCompile Include="src\joints\slider.cpp" />
+    <ClCompile Include="src\joints\universal.cpp" />
+    <ClCompile Include="src\lcp.cpp" />
+    <ClCompile Include="src\mass.cpp" />
+    <ClCompile Include="src\mat.cpp" />
+    <ClCompile Include="src\matrix.cpp" />
+    <ClCompile Include="src\memory.cpp" />
+    <ClCompile Include="src\misc.cpp" />
+    <ClCompile Include="src\nextafterf.c" />
+    <ClCompile Include="src\obstack.cpp" />
+    <ClCompile Include="src\ode.cpp" />
+    <ClCompile Include="src\odeinit.cpp" />
+    <ClCompile Include="src\odemath.cpp" />
+    <ClCompile Include="src\odeou.cpp" />
+    <ClCompile Include="src\odetls.cpp" />
+    <ClCompile Include="src\plane.cpp" />
+    <ClCompile Include="src\quickstep.cpp" />
+    <ClCompile Include="src\ray.cpp" />
+    <ClCompile Include="src\rotation.cpp" />
+    <ClCompile Include="src\sphere.cpp" />
+    <ClCompile Include="src\step.cpp" />
+    <ClCompile Include="src\timer.cpp" />
+    <ClCompile Include="src\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ode\collision.h" />
+    <ClInclude Include="include\ode\collision_space.h" />
+    <ClInclude Include="include\ode\collision_trimesh.h" />
+    <ClInclude Include="include\ode\common.h" />
+    <ClInclude Include="include\ode\compatibility.h" />
+    <ClInclude Include="include\ode\contact.h" />
+    <ClInclude Include="include\ode\error.h" />
+    <ClInclude Include="include\ode\export-dif.h" />
+    <ClInclude Include="include\ode\mass.h" />
+    <ClInclude Include="include\ode\matrix.h" />
+    <ClInclude Include="include\ode\memory.h" />
+    <ClInclude Include="include\ode\misc.h" />
+    <ClInclude Include="include\ode\objects.h" />
+    <ClInclude Include="include\ode\ode.h" />
+    <ClInclude Include="include\ode\odeconfig.h" />
+    <ClInclude Include="include\ode\odecpp.h" />
+    <ClInclude Include="include\ode\odecpp_collision.h" />
+    <ClInclude Include="include\ode\odeinit.h" />
+    <ClInclude Include="include\ode\odemath.h" />
+    <ClInclude Include="include\ode\odemath_legacy.h" />
+    <ClInclude Include="include\ode\rotation.h" />
+    <ClInclude Include="include\ode\timer.h" />
+    <ClInclude Include="src\array.h" />
+    <ClInclude Include="src\collision_kernel.h" />
+    <ClInclude Include="src\collision_libccd.h" />
+    <ClInclude Include="src\collision_space_internal.h" />
+    <ClInclude Include="src\collision_std.h" />
+    <ClInclude Include="src\collision_transform.h" />
+    <ClInclude Include="src\collision_trimesh_colliders.h" />
+    <ClInclude Include="src\collision_trimesh_internal.h" />
+    <ClInclude Include="src\collision_util.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\heightfield.h" />
+    <ClInclude Include="src\joints\amotor.h" />
+    <ClInclude Include="src\joints\ball.h" />
+    <ClInclude Include="src\joints\contact.h" />
+    <ClInclude Include="src\joints\fixed.h" />
+    <ClInclude Include="src\joints\hinge.h" />
+    <ClInclude Include="src\joints\hinge2.h" />
+    <ClInclude Include="src\joints\joint.h" />
+    <ClInclude Include="src\joints\joints.h" />
+    <ClInclude Include="src\joints\joint_internal.h" />
+    <ClInclude Include="src\joints\lmotor.h" />
+    <ClInclude Include="src\joints\null.h" />
+    <ClInclude Include="src\joints\piston.h" />
+    <ClInclude Include="src\joints\plane2d.h" />
+    <ClInclude Include="src\joints\pr.h" />
+    <ClInclude Include="src\joints\pu.h" />
+    <ClInclude Include="src\joints\slider.h" />
+    <ClInclude Include="src\joints\universal.h" />
+    <ClInclude Include="src\lcp.h" />
+    <ClInclude Include="src\mat.h" />
+    <ClInclude Include="src\objects.h" />
+    <ClInclude Include="src\obstack.h" />
+    <ClInclude Include="src\odeou.h" />
+    <ClInclude Include="src\odetls.h" />
+    <ClInclude Include="src\quickstep.h" />
+    <ClInclude Include="src\step.h" />
+    <ClInclude Include="src\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\config.h.origin" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF075FD5-DDFC-44FB-BDA8-1A2A20A932C5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libode</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\lib\x64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;dDOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\libccd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;dDOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\libccd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;dDOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\libccd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;dDOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\libccd\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

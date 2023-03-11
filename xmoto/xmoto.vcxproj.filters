@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{ac5a5c21-fb00-42b6-9e01-0dd2af8cad4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{abd7d5ca-313d-439b-a56c-b5ce9aa4562d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drawlib">
+      <UniqueIdentifier>{145fe318-17dd-4f49-87bc-df716da8134a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{d7865c40-5124-415b-9859-ad900e947fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers">
+      <UniqueIdentifier>{e927961e-147c-43f4-8f05-26835300db17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{f5df7124-f418-414e-9d46-28772f3c73ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{12c79d4b-78ae-4ca6-88fe-da088dd3b8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{be9d2297-1868-4a62-bb3b-4e8d31bb9aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="states">
+      <UniqueIdentifier>{10267b79-8748-447d-9fd7-c08440142999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{4243c12b-2843-485a-8594-52f424e6f757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xmoto">
+      <UniqueIdentifier>{d92ce62c-7e8d-4e87-a2d4-b016aebfa8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xmscene">
+      <UniqueIdentifier>{67726dce-1303-4fa1-9c40-eae94f90710f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\basic">
+      <UniqueIdentifier>{81f2f15a-c03d-43b7-9898-89f74a610ada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\specific">
+      <UniqueIdentifier>{a12bec28-2cad-49d6-b065-14da40435909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\helpers">
+      <UniqueIdentifier>{1555985a-bae4-4281-888d-7c1284a4a3a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\thread">
+      <UniqueIdentifier>{e9649814-7b96-4d3f-99d6-6c95d98c6198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xmoto\input">
+      <UniqueIdentifier>{9aafef91-3038-425a-8398-c6da0b58bb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{fb7d06c5-5f5f-4a3a-a74e-f25b08e7b73b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\BuildConfig.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\CameraAnimation.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\CRCHash.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\DBuffer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Image.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Languages.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Locales.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Packager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\PolyDraw.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\svn_version.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\TextEdit.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Theme.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VBezier.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VFileIO.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VFileIO_types.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VTexture.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\VXml.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\WWW.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\WWWAppInterface.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMArgs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMBuild.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMBuildConfig.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMotoLoadLevelsInterface.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMotoLoadReplaysInterface.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMSession.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\XMSession_default.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\db\xmDatabase.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="src\db\xmDatabaseUpdateInterface.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawlib\DrawLib.h">
+      <Filter>drawlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawlib\DrawLibOpenGL.h">
+      <Filter>drawlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawlib\DrawLibSDLgfx.h">
+      <Filter>drawlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\basic\GUI.h">
+      <Filter>gui\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\basic\GUIConsole.h">
+      <Filter>gui\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\specific\GUIXMoto.h">
+      <Filter>gui\specific</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\CmdArgumentParser.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Color.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Environment.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\FileCompression.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\HashTbl.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\HighPrecisionTimer.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\iqsort.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Log.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\MultiSingleton.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Random.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\RenderSurface.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\ScopedTimer.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Singleton.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\SwapEndian.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\System.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Text.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\TFunctor.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\Time.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\utf8.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\VExcept.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\VMath.h">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\image\tim.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_endian.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_hashmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_OpenGL.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_SDL.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_SDL_mixer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_SDL_net.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xm_SDL_ttf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\helpers\Net.h">
+      <Filter>net\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\thread\ServerThread.h">
+      <Filter>net\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\ActionReader.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\BasicStructures.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\extSDL_net.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\NetActions.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\NetClient.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\NetServer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\ServerRules.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\VirtualNetLevelsList.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BasicSceneStructs.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Bike.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BikeAnchors.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BikeController.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BikeGhost.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BikeParameters.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\BikePlayer.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Block.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Camera.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\ChipmunkWorld.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Entity.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\GhostTrail.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Level.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\PhysicsSettings.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Scene.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\ScriptTimer.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\SkyApparence.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmscene\Zone.h">
+      <Filter>xmscene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\input\Input.h">
+      <Filter>xmoto\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\input\InputLegacy.h">
+      <Filter>xmoto\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\input\Joystick.h">
+      <Filter>xmoto\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\input\XMKey.h">
+      <Filter>xmoto\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\BSP.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Collision.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Credits.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Game.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\GameEvents.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\GameText.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\GeomsManager.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\LevelsManager.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\LevelsText.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\LuaLibBase.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\LuaLibGame.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\PhysSettings.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Renderer.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Replay.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\ScriptDynamicObjects.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\SomersaultCounter.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Sound.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\sqlqueries.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\SysMessage.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Trainer.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\Universe.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\UserConfig.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\VideoRecorder.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\VirtualLevelsList.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xmoto\XMDemo.h">
+      <Filter>xmoto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\CheckWwwThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\DownloadReplaysThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\LevelsPacksCountUpdateThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\SendReportThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\SendVoteThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\SyncThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UpdateDbThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UpdateRoomsListThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UpdateThemesListThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UpdateThemeThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UpgradeLevelsThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UploadAllHighscoresThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\UploadHighscoreThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\XMThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\XMThreads.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\XMThreadStats.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\AttractMode.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\GameState.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateCheckWww.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateCreditsMode.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateDeadJust.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateDeadMenu.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateEditProfile.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateEditWebConfig.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateFinished.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateHelp.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateLevelInfoViewer.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateLevelPackViewer.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateMainMenu.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateManager.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateMenu.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateMessageBox.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateMessageBoxReceiver.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateMultiUpdate.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateOptions.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePause.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePlaying.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePlayingLocal.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePlayingNet.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePreplaying.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePreplayingCredits.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePreplayingGame.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePreplayingNet.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StatePreplayingReplay.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateReplaying.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateRequestKey.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateScene.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateSendReport.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateSendVote.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateServerConsole.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateSync.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpdate.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpdateDb.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpdateRoomsList.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpdateTheme.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpdateThemesList.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUpgradeLevels.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUploadAllHighscores.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateUploadHighscore.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateViewHighscore.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateVote.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateWaiting.h">
+      <Filter>states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\StateWaitServerInstructions.h">
+      <Filter>states</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\CameraAnimation.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\CRCHash.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\DBuffer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Image.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Locales.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Packager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\PolyDraw.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\svn_version.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\TextEdit.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Theme.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\VBezier.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\VFileIO.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\VTexture.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\VXml.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\WWW.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\XMArgs.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\XMBuild.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\XMSession.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\XMSession_default.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_config.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_fixes.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_levels.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_profiles.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_replays.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_srv.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_stats.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_sync.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_themes.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_votes.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db\xmDatabase_web.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawlib\DrawLib.cpp">
+      <Filter>drawlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawlib\DrawLibOpenGL.cpp">
+      <Filter>drawlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawlib\DrawLibSDLgfx.cpp">
+      <Filter>drawlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUI.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIButton.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIButtonDrawn.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIConsole.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIEdit.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIFrame.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIList.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUIStatic.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\basic\GUITabView.cpp">
+      <Filter>gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\specific\GUIXMoto.cpp">
+      <Filter>gui\specific</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\CmdArgumentParser.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\Environment.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\FileCompression.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\HighPrecisionTimerWin32.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\Log.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\Random.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\RenderSurface.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\SwapEndian.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\System.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\Text.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\Time.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\utf8.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\VMath.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image\tim.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image\tim_io_stdio.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image\tim_jpeg.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image\tim_memory_crt.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image\tim_png.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\helpers\Net.cpp">
+      <Filter>net\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\thread\ServerThread.cpp">
+      <Filter>net\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\ActionReader.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\extSDL_net.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\NetActions.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\NetClient.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\NetServer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\ServerRules.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\VirtualNetLevelsList.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BasicSceneStructs.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Bike.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BikeAnchors.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BikeController.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BikeGhost.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BikeParameters.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\BikePlayer.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Camera.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\ChipmunkWorld.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Entity.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\GhostTrail.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Level.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\PhysicsSettings.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Scene.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\ScriptTimer.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Serializer.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\SkyApparence.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Zone.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\input\Input.cpp">
+      <Filter>xmoto\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\input\InputLegacy.cpp">
+      <Filter>xmoto\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\input\Joystick.cpp">
+      <Filter>xmoto\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\input\XMKey.cpp">
+      <Filter>xmoto\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\BSP.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Collision.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Credits.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Game.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\GameEvents.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\GameInit.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\GeomsManager.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\GUIBestTimes.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\LevelsManager.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\LuaLibBase.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\LuaLibGame.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Renderer.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\RendererFBO.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Replay.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\ScriptDynamicObjects.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\SomersaultCounter.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Sound.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\SysMessage.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Trainer.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\Universe.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\UserConfig.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\VideoRecorder.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\VirtualLevelsList.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmoto\XMDemo.cpp">
+      <Filter>xmoto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\CheckWwwThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\DownloadReplaysThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\LevelsPacksCountUpdateThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\SendReportThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\SendVoteThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\SyncThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UpdateDbThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UpdateRoomsListThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UpdateThemesListThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UpdateThemeThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UpgradeLevelsThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UploadAllHighscoresThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\UploadHighscoreThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\XMThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\XMThreads.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\XMThreadStats.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\AttractMode.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\GameState.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateCheckWww.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateCreditsMode.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateDeadJust.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateDeadMenu.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateEditProfile.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateEditWebConfig.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateFinished.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateHelp.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateLevelInfoViewer.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateLevelPackViewer.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateMainMenu.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateManager.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateMenu.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateMessageBox.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateMultiUpdate.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateOptions.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePause.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePlaying.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePlayingLocal.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePlayingNet.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePreplaying.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePreplayingCredits.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePreplayingGame.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePreplayingNet.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StatePreplayingReplay.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateReplaying.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateRequestKey.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateScene.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateSendReport.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateSendVote.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateServerConsole.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateSync.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpdate.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpdateDb.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpdateRoomsList.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpdateTheme.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpdateThemesList.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUpgradeLevels.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUploadAllHighscores.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateUploadHighscore.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateViewHighscore.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateVote.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateWaiting.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\StateWaitServerInstructions.cpp">
+      <Filter>states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xmscene\Block.cpp">
+      <Filter>xmscene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xmoto.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jsimd.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="src\x86_64\jccolor-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jccolor-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jcgray-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jcgray-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jchuff-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jcphuff-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jcsample-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jcsample-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdcolor-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdcolor-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdmerge-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdmerge-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdsample-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jdsample-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jfdctflt-sse.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jfdctfst-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jfdctint-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jfdctint-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jidctflt-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jidctfst-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jidctint-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jidctint-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jidctred-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jquantf-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jquanti-avx2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jquanti-sse2.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+    <NASM Include="src\x86_64\jsimdcpu.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\nasm/;$(ProjectDir)src/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)src\nasm/;$(ProjectDir)src/x86_64/</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-DWIN64 -D__x86_64__ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-DWIN32 %(AdditionalOptions)</AdditionalOptions>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1</Outputswitch>
+      <Outputswitch Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1</Outputswitch>
+    </NASM>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4547BDE1-4AF8-41C9-A954-833DB3CE14BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libsimd</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="BuildCustomizations\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\lib\x86\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\lib\x64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\libd\x64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\libd\x86\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="BuildCustomizations\nasm.targets" />
+  </ImportGroup>
+</Project>

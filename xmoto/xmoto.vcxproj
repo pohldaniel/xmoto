@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\BuildConfig.h" />
+    <ClInclude Include="src\common\CameraAnimation.h" />
+    <ClInclude Include="src\common\CRCHash.h" />
+    <ClInclude Include="src\common\DBuffer.h" />
+    <ClInclude Include="src\common\Image.h" />
+    <ClInclude Include="src\common\Languages.h" />
+    <ClInclude Include="src\common\Locales.h" />
+    <ClInclude Include="src\common\Packager.h" />
+    <ClInclude Include="src\common\PolyDraw.h" />
+    <ClInclude Include="src\common\svn_version.h" />
+    <ClInclude Include="src\common\TextEdit.h" />
+    <ClInclude Include="src\common\Theme.h" />
+    <ClInclude Include="src\common\VBezier.h" />
+    <ClInclude Include="src\common\VCommon.h" />
+    <ClInclude Include="src\common\VFileIO.h" />
+    <ClInclude Include="src\common\VFileIO_types.h" />
+    <ClInclude Include="src\common\VTexture.h" />
+    <ClInclude Include="src\common\VXml.h" />
+    <ClInclude Include="src\common\WWW.h" />
+    <ClInclude Include="src\common\WWWAppInterface.h" />
+    <ClInclude Include="src\common\XMArgs.h" />
+    <ClInclude Include="src\common\XMBuild.h" />
+    <ClInclude Include="src\common\XMBuildConfig.h" />
+    <ClInclude Include="src\common\XMotoLoadLevelsInterface.h" />
+    <ClInclude Include="src\common\XMotoLoadReplaysInterface.h" />
+    <ClInclude Include="src\common\XMSession.h" />
+    <ClInclude Include="src\common\XMSession_default.h" />
+    <ClInclude Include="src\db\xmDatabase.h" />
+    <ClInclude Include="src\db\xmDatabaseUpdateInterface.h" />
+    <ClInclude Include="src\drawlib\DrawLib.h" />
+    <ClInclude Include="src\drawlib\DrawLibOpenGL.h" />
+    <ClInclude Include="src\drawlib\DrawLibSDLgfx.h" />
+    <ClInclude Include="src\gui\basic\GUI.h" />
+    <ClInclude Include="src\gui\basic\GUIConsole.h" />
+    <ClInclude Include="src\gui\specific\GUIXMoto.h" />
+    <ClInclude Include="src\helpers\CmdArgumentParser.h" />
+    <ClInclude Include="src\helpers\Color.h" />
+    <ClInclude Include="src\helpers\Environment.h" />
+    <ClInclude Include="src\helpers\FileCompression.h" />
+    <ClInclude Include="src\helpers\HashTbl.h" />
+    <ClInclude Include="src\helpers\HighPrecisionTimer.h" />
+    <ClInclude Include="src\helpers\iqsort.h" />
+    <ClInclude Include="src\helpers\Log.h" />
+    <ClInclude Include="src\helpers\MultiSingleton.h" />
+    <ClInclude Include="src\helpers\Random.h" />
+    <ClInclude Include="src\helpers\RenderSurface.h" />
+    <ClInclude Include="src\helpers\ScopedTimer.h" />
+    <ClInclude Include="src\helpers\Singleton.h" />
+    <ClInclude Include="src\helpers\SwapEndian.h" />
+    <ClInclude Include="src\helpers\System.h" />
+    <ClInclude Include="src\helpers\Text.h" />
+    <ClInclude Include="src\helpers\TFunctor.h" />
+    <ClInclude Include="src\helpers\Time.h" />
+    <ClInclude Include="src\helpers\utf8.h" />
+    <ClInclude Include="src\helpers\VExcept.h" />
+    <ClInclude Include="src\helpers\VMath.h" />
+    <ClInclude Include="src\image\tim.h" />
+    <ClInclude Include="src\include\xm_endian.h" />
+    <ClInclude Include="src\include\xm_hashmap.h" />
+    <ClInclude Include="src\include\xm_OpenGL.h" />
+    <ClInclude Include="src\include\xm_SDL.h" />
+    <ClInclude Include="src\include\xm_SDL_mixer.h" />
+    <ClInclude Include="src\include\xm_SDL_net.h" />
+    <ClInclude Include="src\include\xm_SDL_ttf.h" />
+    <ClInclude Include="src\net\ActionReader.h" />
+    <ClInclude Include="src\net\BasicStructures.h" />
+    <ClInclude Include="src\net\extSDL_net.h" />
+    <ClInclude Include="src\net\helpers\Net.h" />
+    <ClInclude Include="src\net\NetActions.h" />
+    <ClInclude Include="src\net\NetClient.h" />
+    <ClInclude Include="src\net\NetServer.h" />
+    <ClInclude Include="src\net\ServerRules.h" />
+    <ClInclude Include="src\net\thread\ServerThread.h" />
+    <ClInclude Include="src\net\VirtualNetLevelsList.h" />
+    <ClInclude Include="src\states\AttractMode.h" />
+    <ClInclude Include="src\states\GameState.h" />
+    <ClInclude Include="src\states\StateCheckWww.h" />
+    <ClInclude Include="src\states\StateCreditsMode.h" />
+    <ClInclude Include="src\states\StateDeadJust.h" />
+    <ClInclude Include="src\states\StateDeadMenu.h" />
+    <ClInclude Include="src\states\StateEditProfile.h" />
+    <ClInclude Include="src\states\StateEditWebConfig.h" />
+    <ClInclude Include="src\states\StateFinished.h" />
+    <ClInclude Include="src\states\StateHelp.h" />
+    <ClInclude Include="src\states\StateLevelInfoViewer.h" />
+    <ClInclude Include="src\states\StateLevelPackViewer.h" />
+    <ClInclude Include="src\states\StateMainMenu.h" />
+    <ClInclude Include="src\states\StateManager.h" />
+    <ClInclude Include="src\states\StateMenu.h" />
+    <ClInclude Include="src\states\StateMessageBox.h" />
+    <ClInclude Include="src\states\StateMessageBoxReceiver.h" />
+    <ClInclude Include="src\states\StateMultiUpdate.h" />
+    <ClInclude Include="src\states\StateOptions.h" />
+    <ClInclude Include="src\states\StatePause.h" />
+    <ClInclude Include="src\states\StatePlaying.h" />
+    <ClInclude Include="src\states\StatePlayingLocal.h" />
+    <ClInclude Include="src\states\StatePlayingNet.h" />
+    <ClInclude Include="src\states\StatePreplaying.h" />
+    <ClInclude Include="src\states\StatePreplayingCredits.h" />
+    <ClInclude Include="src\states\StatePreplayingGame.h" />
+    <ClInclude Include="src\states\StatePreplayingNet.h" />
+    <ClInclude Include="src\states\StatePreplayingReplay.h" />
+    <ClInclude Include="src\states\StateReplaying.h" />
+    <ClInclude Include="src\states\StateRequestKey.h" />
+    <ClInclude Include="src\states\StateScene.h" />
+    <ClInclude Include="src\states\StateSendReport.h" />
+    <ClInclude Include="src\states\StateSendVote.h" />
+    <ClInclude Include="src\states\StateServerConsole.h" />
+    <ClInclude Include="src\states\StateSync.h" />
+    <ClInclude Include="src\states\StateUpdate.h" />
+    <ClInclude Include="src\states\StateUpdateDb.h" />
+    <ClInclude Include="src\states\StateUpdateRoomsList.h" />
+    <ClInclude Include="src\states\StateUpdateTheme.h" />
+    <ClInclude Include="src\states\StateUpdateThemesList.h" />
+    <ClInclude Include="src\states\StateUpgradeLevels.h" />
+    <ClInclude Include="src\states\StateUploadAllHighscores.h" />
+    <ClInclude Include="src\states\StateUploadHighscore.h" />
+    <ClInclude Include="src\states\StateViewHighscore.h" />
+    <ClInclude Include="src\states\StateVote.h" />
+    <ClInclude Include="src\states\StateWaiting.h" />
+    <ClInclude Include="src\states\StateWaitServerInstructions.h" />
+    <ClInclude Include="src\thread\CheckWwwThread.h" />
+    <ClInclude Include="src\thread\DownloadReplaysThread.h" />
+    <ClInclude Include="src\thread\LevelsPacksCountUpdateThread.h" />
+    <ClInclude Include="src\thread\SendReportThread.h" />
+    <ClInclude Include="src\thread\SendVoteThread.h" />
+    <ClInclude Include="src\thread\SyncThread.h" />
+    <ClInclude Include="src\thread\UpdateDbThread.h" />
+    <ClInclude Include="src\thread\UpdateRoomsListThread.h" />
+    <ClInclude Include="src\thread\UpdateThemesListThread.h" />
+    <ClInclude Include="src\thread\UpdateThemeThread.h" />
+    <ClInclude Include="src\thread\UpgradeLevelsThread.h" />
+    <ClInclude Include="src\thread\UploadAllHighscoresThread.h" />
+    <ClInclude Include="src\thread\UploadHighscoreThread.h" />
+    <ClInclude Include="src\thread\XMThread.h" />
+    <ClInclude Include="src\thread\XMThreads.h" />
+    <ClInclude Include="src\thread\XMThreadStats.h" />
+    <ClInclude Include="src\xmoto\BSP.h" />
+    <ClInclude Include="src\xmoto\Collision.h" />
+    <ClInclude Include="src\xmoto\Credits.h" />
+    <ClInclude Include="src\xmoto\Game.h" />
+    <ClInclude Include="src\xmoto\GameEvents.h" />
+    <ClInclude Include="src\xmoto\GameText.h" />
+    <ClInclude Include="src\xmoto\GeomsManager.h" />
+    <ClInclude Include="src\xmoto\input\Input.h" />
+    <ClInclude Include="src\xmoto\input\InputLegacy.h" />
+    <ClInclude Include="src\xmoto\input\Joystick.h" />
+    <ClInclude Include="src\xmoto\input\XMKey.h" />
+    <ClInclude Include="src\xmoto\LevelsManager.h" />
+    <ClInclude Include="src\xmoto\LevelsText.h" />
+    <ClInclude Include="src\xmoto\LuaLibBase.h" />
+    <ClInclude Include="src\xmoto\LuaLibGame.h" />
+    <ClInclude Include="src\xmoto\PhysSettings.h" />
+    <ClInclude Include="src\xmoto\Renderer.h" />
+    <ClInclude Include="src\xmoto\Replay.h" />
+    <ClInclude Include="src\xmoto\ScriptDynamicObjects.h" />
+    <ClInclude Include="src\xmoto\SomersaultCounter.h" />
+    <ClInclude Include="src\xmoto\Sound.h" />
+    <ClInclude Include="src\xmoto\sqlqueries.h" />
+    <ClInclude Include="src\xmoto\SysMessage.h" />
+    <ClInclude Include="src\xmoto\Trainer.h" />
+    <ClInclude Include="src\xmoto\Universe.h" />
+    <ClInclude Include="src\xmoto\UserConfig.h" />
+    <ClInclude Include="src\xmoto\VideoRecorder.h" />
+    <ClInclude Include="src\xmoto\VirtualLevelsList.h" />
+    <ClInclude Include="src\xmoto\XMDemo.h" />
+    <ClInclude Include="src\xmscene\BasicSceneStructs.h" />
+    <ClInclude Include="src\xmscene\Bike.h" />
+    <ClInclude Include="src\xmscene\BikeAnchors.h" />
+    <ClInclude Include="src\xmscene\BikeController.h" />
+    <ClInclude Include="src\xmscene\BikeGhost.h" />
+    <ClInclude Include="src\xmscene\BikeParameters.h" />
+    <ClInclude Include="src\xmscene\BikePlayer.h" />
+    <ClInclude Include="src\xmscene\Block.h" />
+    <ClInclude Include="src\xmscene\Camera.h" />
+    <ClInclude Include="src\xmscene\ChipmunkWorld.h" />
+    <ClInclude Include="src\xmscene\Entity.h" />
+    <ClInclude Include="src\xmscene\GhostTrail.h" />
+    <ClInclude Include="src\xmscene\Level.h" />
+    <ClInclude Include="src\xmscene\PhysicsSettings.h" />
+    <ClInclude Include="src\xmscene\Scene.h" />
+    <ClInclude Include="src\xmscene\ScriptTimer.h" />
+    <ClInclude Include="src\xmscene\SkyApparence.h" />
+    <ClInclude Include="src\xmscene\Zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\CameraAnimation.cpp" />
+    <ClCompile Include="src\common\CRCHash.cpp" />
+    <ClCompile Include="src\common\DBuffer.cpp" />
+    <ClCompile Include="src\common\Image.cpp" />
+    <ClCompile Include="src\common\Locales.cpp" />
+    <ClCompile Include="src\common\Packager.cpp" />
+    <ClCompile Include="src\common\PolyDraw.cpp" />
+    <ClCompile Include="src\common\svn_version.cpp" />
+    <ClCompile Include="src\common\TextEdit.cpp" />
+    <ClCompile Include="src\common\Theme.cpp" />
+    <ClCompile Include="src\common\VBezier.cpp" />
+    <ClCompile Include="src\common\VFileIO.cpp" />
+    <ClCompile Include="src\common\VTexture.cpp" />
+    <ClCompile Include="src\common\VXml.cpp" />
+    <ClCompile Include="src\common\WWW.cpp" />
+    <ClCompile Include="src\common\XMArgs.cpp" />
+    <ClCompile Include="src\common\XMBuild.cpp" />
+    <ClCompile Include="src\common\XMSession.cpp" />
+    <ClCompile Include="src\common\XMSession_default.cpp" />
+    <ClCompile Include="src\db\xmDatabase.cpp" />
+    <ClCompile Include="src\db\xmDatabase_config.cpp" />
+    <ClCompile Include="src\db\xmDatabase_fixes.cpp" />
+    <ClCompile Include="src\db\xmDatabase_levels.cpp" />
+    <ClCompile Include="src\db\xmDatabase_profiles.cpp" />
+    <ClCompile Include="src\db\xmDatabase_replays.cpp" />
+    <ClCompile Include="src\db\xmDatabase_srv.cpp" />
+    <ClCompile Include="src\db\xmDatabase_stats.cpp" />
+    <ClCompile Include="src\db\xmDatabase_sync.cpp" />
+    <ClCompile Include="src\db\xmDatabase_themes.cpp" />
+    <ClCompile Include="src\db\xmDatabase_votes.cpp" />
+    <ClCompile Include="src\db\xmDatabase_web.cpp" />
+    <ClCompile Include="src\drawlib\DrawLib.cpp" />
+    <ClCompile Include="src\drawlib\DrawLibOpenGL.cpp" />
+    <ClCompile Include="src\drawlib\DrawLibSDLgfx.cpp" />
+    <ClCompile Include="src\gui\basic\GUI.cpp" />
+    <ClCompile Include="src\gui\basic\GUIButton.cpp" />
+    <ClCompile Include="src\gui\basic\GUIButtonDrawn.cpp" />
+    <ClCompile Include="src\gui\basic\GUIConsole.cpp" />
+    <ClCompile Include="src\gui\basic\GUIEdit.cpp" />
+    <ClCompile Include="src\gui\basic\GUIFrame.cpp" />
+    <ClCompile Include="src\gui\basic\GUIList.cpp" />
+    <ClCompile Include="src\gui\basic\GUIStatic.cpp" />
+    <ClCompile Include="src\gui\basic\GUITabView.cpp" />
+    <ClCompile Include="src\gui\specific\GUIXMoto.cpp" />
+    <ClCompile Include="src\helpers\CmdArgumentParser.cpp" />
+    <ClCompile Include="src\helpers\Environment.cpp" />
+    <ClCompile Include="src\helpers\FileCompression.cpp" />
+    <ClCompile Include="src\helpers\HighPrecisionTimerWin32.cpp" />
+    <ClCompile Include="src\helpers\Log.cpp" />
+    <ClCompile Include="src\helpers\Random.cpp" />
+    <ClCompile Include="src\helpers\RenderSurface.cpp" />
+    <ClCompile Include="src\helpers\SwapEndian.cpp" />
+    <ClCompile Include="src\helpers\System.cpp" />
+    <ClCompile Include="src\helpers\Text.cpp" />
+    <ClCompile Include="src\helpers\Time.cpp" />
+    <ClCompile Include="src\helpers\utf8.cpp" />
+    <ClCompile Include="src\helpers\VMath.cpp" />
+    <ClCompile Include="src\image\tim.cpp" />
+    <ClCompile Include="src\image\tim_io_stdio.cpp" />
+    <ClCompile Include="src\image\tim_jpeg.cpp" />
+    <ClCompile Include="src\image\tim_memory_crt.cpp" />
+    <ClCompile Include="src\image\tim_png.cpp" />
+    <ClCompile Include="src\net\ActionReader.cpp" />
+    <ClCompile Include="src\net\extSDL_net.cpp" />
+    <ClCompile Include="src\net\helpers\Net.cpp" />
+    <ClCompile Include="src\net\NetActions.cpp" />
+    <ClCompile Include="src\net\NetClient.cpp" />
+    <ClCompile Include="src\net\NetServer.cpp" />
+    <ClCompile Include="src\net\ServerRules.cpp" />
+    <ClCompile Include="src\net\thread\ServerThread.cpp" />
+    <ClCompile Include="src\net\VirtualNetLevelsList.cpp" />
+    <ClCompile Include="src\states\AttractMode.cpp" />
+    <ClCompile Include="src\states\GameState.cpp" />
+    <ClCompile Include="src\states\StateCheckWww.cpp" />
+    <ClCompile Include="src\states\StateCreditsMode.cpp" />
+    <ClCompile Include="src\states\StateDeadJust.cpp" />
+    <ClCompile Include="src\states\StateDeadMenu.cpp" />
+    <ClCompile Include="src\states\StateEditProfile.cpp" />
+    <ClCompile Include="src\states\StateEditWebConfig.cpp" />
+    <ClCompile Include="src\states\StateFinished.cpp" />
+    <ClCompile Include="src\states\StateHelp.cpp" />
+    <ClCompile Include="src\states\StateLevelInfoViewer.cpp" />
+    <ClCompile Include="src\states\StateLevelPackViewer.cpp" />
+    <ClCompile Include="src\states\StateMainMenu.cpp" />
+    <ClCompile Include="src\states\StateManager.cpp" />
+    <ClCompile Include="src\states\StateMenu.cpp" />
+    <ClCompile Include="src\states\StateMessageBox.cpp" />
+    <ClCompile Include="src\states\StateMultiUpdate.cpp" />
+    <ClCompile Include="src\states\StateOptions.cpp" />
+    <ClCompile Include="src\states\StatePause.cpp" />
+    <ClCompile Include="src\states\StatePlaying.cpp" />
+    <ClCompile Include="src\states\StatePlayingLocal.cpp" />
+    <ClCompile Include="src\states\StatePlayingNet.cpp" />
+    <ClCompile Include="src\states\StatePreplaying.cpp" />
+    <ClCompile Include="src\states\StatePreplayingCredits.cpp" />
+    <ClCompile Include="src\states\StatePreplayingGame.cpp" />
+    <ClCompile Include="src\states\StatePreplayingNet.cpp" />
+    <ClCompile Include="src\states\StatePreplayingReplay.cpp" />
+    <ClCompile Include="src\states\StateReplaying.cpp" />
+    <ClCompile Include="src\states\StateRequestKey.cpp" />
+    <ClCompile Include="src\states\StateScene.cpp" />
+    <ClCompile Include="src\states\StateSendReport.cpp" />
+    <ClCompile Include="src\states\StateSendVote.cpp" />
+    <ClCompile Include="src\states\StateServerConsole.cpp" />
+    <ClCompile Include="src\states\StateSync.cpp" />
+    <ClCompile Include="src\states\StateUpdate.cpp" />
+    <ClCompile Include="src\states\StateUpdateDb.cpp" />
+    <ClCompile Include="src\states\StateUpdateRoomsList.cpp" />
+    <ClCompile Include="src\states\StateUpdateTheme.cpp" />
+    <ClCompile Include="src\states\StateUpdateThemesList.cpp" />
+    <ClCompile Include="src\states\StateUpgradeLevels.cpp" />
+    <ClCompile Include="src\states\StateUploadAllHighscores.cpp" />
+    <ClCompile Include="src\states\StateUploadHighscore.cpp" />
+    <ClCompile Include="src\states\StateViewHighscore.cpp" />
+    <ClCompile Include="src\states\StateVote.cpp" />
+    <ClCompile Include="src\states\StateWaiting.cpp" />
+    <ClCompile Include="src\states\StateWaitServerInstructions.cpp" />
+    <ClCompile Include="src\thread\CheckWwwThread.cpp" />
+    <ClCompile Include="src\thread\DownloadReplaysThread.cpp" />
+    <ClCompile Include="src\thread\LevelsPacksCountUpdateThread.cpp" />
+    <ClCompile Include="src\thread\SendReportThread.cpp" />
+    <ClCompile Include="src\thread\SendVoteThread.cpp" />
+    <ClCompile Include="src\thread\SyncThread.cpp" />
+    <ClCompile Include="src\thread\UpdateDbThread.cpp" />
+    <ClCompile Include="src\thread\UpdateRoomsListThread.cpp" />
+    <ClCompile Include="src\thread\UpdateThemesListThread.cpp" />
+    <ClCompile Include="src\thread\UpdateThemeThread.cpp" />
+    <ClCompile Include="src\thread\UpgradeLevelsThread.cpp" />
+    <ClCompile Include="src\thread\UploadAllHighscoresThread.cpp" />
+    <ClCompile Include="src\thread\UploadHighscoreThread.cpp" />
+    <ClCompile Include="src\thread\XMThread.cpp" />
+    <ClCompile Include="src\thread\XMThreads.cpp" />
+    <ClCompile Include="src\thread\XMThreadStats.cpp" />
+    <ClCompile Include="src\xmoto\BSP.cpp" />
+    <ClCompile Include="src\xmoto\Collision.cpp" />
+    <ClCompile Include="src\xmoto\Credits.cpp" />
+    <ClCompile Include="src\xmoto\Game.cpp" />
+    <ClCompile Include="src\xmoto\GameEvents.cpp" />
+    <ClCompile Include="src\xmoto\GameInit.cpp" />
+    <ClCompile Include="src\xmoto\GeomsManager.cpp" />
+    <ClCompile Include="src\xmoto\GUIBestTimes.cpp" />
+    <ClCompile Include="src\xmoto\input\Input.cpp" />
+    <ClCompile Include="src\xmoto\input\InputLegacy.cpp" />
+    <ClCompile Include="src\xmoto\input\Joystick.cpp" />
+    <ClCompile Include="src\xmoto\input\XMKey.cpp" />
+    <ClCompile Include="src\xmoto\LevelsManager.cpp" />
+    <ClCompile Include="src\xmoto\LuaLibBase.cpp" />
+    <ClCompile Include="src\xmoto\LuaLibGame.cpp" />
+    <ClCompile Include="src\xmoto\Renderer.cpp" />
+    <ClCompile Include="src\xmoto\RendererFBO.cpp" />
+    <ClCompile Include="src\xmoto\Replay.cpp" />
+    <ClCompile Include="src\xmoto\ScriptDynamicObjects.cpp" />
+    <ClCompile Include="src\xmoto\SomersaultCounter.cpp" />
+    <ClCompile Include="src\xmoto\Sound.cpp" />
+    <ClCompile Include="src\xmoto\SysMessage.cpp" />
+    <ClCompile Include="src\xmoto\Trainer.cpp" />
+    <ClCompile Include="src\xmoto\Universe.cpp" />
+    <ClCompile Include="src\xmoto\UserConfig.cpp" />
+    <ClCompile Include="src\xmoto\VideoRecorder.cpp" />
+    <ClCompile Include="src\xmoto\VirtualLevelsList.cpp" />
+    <ClCompile Include="src\xmoto\XMDemo.cpp" />
+    <ClCompile Include="src\xmscene\BasicSceneStructs.cpp" />
+    <ClCompile Include="src\xmscene\Bike.cpp" />
+    <ClCompile Include="src\xmscene\BikeAnchors.cpp" />
+    <ClCompile Include="src\xmscene\BikeController.cpp" />
+    <ClCompile Include="src\xmscene\BikeGhost.cpp" />
+    <ClCompile Include="src\xmscene\BikeParameters.cpp" />
+    <ClCompile Include="src\xmscene\BikePlayer.cpp" />
+    <ClCompile Include="src\xmscene\Block.cpp" />
+    <ClCompile Include="src\xmscene\Camera.cpp" />
+    <ClCompile Include="src\xmscene\ChipmunkWorld.cpp" />
+    <ClCompile Include="src\xmscene\Entity.cpp" />
+    <ClCompile Include="src\xmscene\GhostTrail.cpp" />
+    <ClCompile Include="src\xmscene\Level.cpp" />
+    <ClCompile Include="src\xmscene\PhysicsSettings.cpp" />
+    <ClCompile Include="src\xmscene\Scene.cpp" />
+    <ClCompile Include="src\xmscene\ScriptTimer.cpp" />
+    <ClCompile Include="src\xmscene\Serializer.cpp" />
+    <ClCompile Include="src\xmscene\SkyApparence.cpp" />
+    <ClCompile Include="src\xmscene\Zone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xmoto.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EB34341-E83F-4C95-AE0D-DDE205ADA1B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xmoto</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;dDOUBLE;HAVE_PUTENV=1;HAVE_SETENV=0;MS_MKDIR=0;WIN32_LEAN_AND_MEAN;HAVE_LUAL_OPENLIB=0;USE_OPENGL=1;USE_SDLGFX=0;USE_GETTEXT=1;ALLOW_DEV=0;BUILD_MACOS_BUNDLE=0;SVN_REV="git";CONFIGURE_DEFAULT_THEME="Classic";DEFAULT_ASIAN_TTF_FILE="Textures/Fonts/bkai00mp.ttf";CURL_STATICLIB;LIBXML_STATIC;LIBINTL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;..\SDL2\include;..\SDL2_mixer\include;..\SDL2_net\include;..\SDL2_ttf\include;..\libglad\include;..\libcurl\include;..\libsqlite3;..\libxml2\include;..\libode\include;..\libmd5sum\include;..\libzlib\include;..\libbzip2;..\libchipmunk;..\lua\include;..\libpng\include;..\libjpeg\include;..\libintl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libcurl\lib\x86;..\libd\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libbzip2.lib;libccd.lib;libchipmunk.lib;libfreetype.lib;libglad.lib;libintl.lib;liblua.lib;libmd5sum.lib;libode.lib;libpng.lib;libxml2.lib;libzlib.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_net.lib;GLU32.lib;OPENGL32.lib;libjpeg.lib;libsqlite3.lib;libcurl_a.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;dDOUBLE;HAVE_PUTENV=1;HAVE_SETENV=0;MS_MKDIR=0;WIN32_LEAN_AND_MEAN;HAVE_LUAL_OPENLIB=0;USE_OPENGL=1;USE_SDLGFX=0;USE_GETTEXT=1;ALLOW_DEV=0;BUILD_MACOS_BUNDLE=0;SVN_REV="git";CONFIGURE_DEFAULT_THEME="Classic";DEFAULT_ASIAN_TTF_FILE="Textures/Fonts/bkai00mp.ttf";CURL_STATICLIB;LIBXML_STATIC;LIBINTL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;..\SDL2\include;..\SDL2_mixer\include;..\SDL2_net\include;..\SDL2_ttf\include;..\libglad\include;..\libcurl\include;..\libsqlite3;..\libxml2\include;..\libode\include;..\libmd5sum\include;..\libzlib\include;..\libbzip2;..\libchipmunk;..\lua\include;..\libpng\include;..\libjpeg\include;..\libintl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libcurl\lib\x64;..\libd\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libbzip2.lib;libccd.lib;libchipmunk.lib;libfreetype.lib;libglad.lib;libintl.lib;liblua.lib;libmd5sum.lib;libode.lib;libpng.lib;libxml2.lib;libzlib.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_net.lib;GLU32.lib;OPENGL32.lib;libjpeg.lib;libsqlite3.lib;libcurl_a.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;dDOUBLE;HAVE_PUTENV=1;HAVE_SETENV=0;MS_MKDIR=0;WIN32_LEAN_AND_MEAN;HAVE_LUAL_OPENLIB=0;USE_OPENGL=1;USE_SDLGFX=0;USE_GETTEXT=1;ALLOW_DEV=0;BUILD_MACOS_BUNDLE=0;SVN_REV="git";CONFIGURE_DEFAULT_THEME="Classic";DEFAULT_ASIAN_TTF_FILE="Textures/Fonts/bkai00mp.ttf";CURL_STATICLIB;LIBXML_STATIC;LIBINTL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;..\SDL2\include;..\SDL2_mixer\include;..\SDL2_net\include;..\SDL2_ttf\include;..\libglad\include;..\libcurl\include;..\libsqlite3;..\libxml2\include;..\libode\include;..\libmd5sum\include;..\libzlib\include;..\libbzip2;..\libchipmunk;..\lua\include;..\libpng\include;..\libjpeg\include;..\libintl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libcurl\lib\x86;..\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libbzip2.lib;libccd.lib;libchipmunk.lib;libfreetype.lib;libglad.lib;libintl.lib;liblua.lib;libmd5sum.lib;libode.lib;libpng.lib;libxml2.lib;libzlib.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_net.lib;GLU32.lib;OPENGL32.lib;libjpeg.lib;libsqlite3.lib;libcurl_a.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;dDOUBLE;HAVE_PUTENV=1;HAVE_SETENV=0;MS_MKDIR=0;WIN32_LEAN_AND_MEAN;HAVE_LUAL_OPENLIB=0;USE_OPENGL=1;USE_SDLGFX=0;USE_GETTEXT=1;ALLOW_DEV=0;BUILD_MACOS_BUNDLE=0;SVN_REV="git";CONFIGURE_DEFAULT_THEME="Classic";DEFAULT_ASIAN_TTF_FILE="Textures/Fonts/bkai00mp.ttf";CURL_STATICLIB;LIBXML_STATIC;LIBINTL_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;..\SDL2\include;..\SDL2_mixer\include;..\SDL2_net\include;..\SDL2_ttf\include;..\libglad\include;..\libcurl\include;..\libsqlite3;..\libxml2\include;..\libode\include;..\libmd5sum\include;..\libzlib\include;..\libbzip2;..\libchipmunk;..\lua\include;..\libpng\include;..\libjpeg\include;..\libintl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libcurl\lib\x64;..\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libbzip2.lib;libccd.lib;libchipmunk.lib;libfreetype.lib;libglad.lib;libintl.lib;liblua.lib;libmd5sum.lib;libode.lib;libpng.lib;libxml2.lib;libzlib.lib;SDL2.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2_net.lib;GLU32.lib;OPENGL32.lib;libjpeg.lib;libsqlite3.lib;libcurl_a.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

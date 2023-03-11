@@ -1,0 +1,8 @@
+**	right click libsimd -> Build Dependencies -> Build Customization 
+	Find Existing add the one provided with the libsimd project folder
+
+
+**	manula nasm commands
+//out of libsimd/src
+nasm src\i386\jccolor-avx2.asm -o src\i386\jccolor-avx2.obj -fwin32  -I"src\nasm/" -I"src\i386/" -DWIN32
+nasm src\x86_64\jccolor-avx2.asm -o src\x86_64\jccolor-avx2.obj -fwin64 -I"src\x86_64/" -I"src\nasm/" -DWIN64 -D__x86_64__ 

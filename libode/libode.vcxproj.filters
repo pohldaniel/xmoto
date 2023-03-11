@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\joints">
+      <UniqueIdentifier>{47e6e13c-9845-442a-8b76-8ddd0cb7446e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\joints\amotor.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\ball.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\contact.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\fixed.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\hinge.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\hinge2.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\joint.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\lmotor.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\null.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\piston.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\plane2d.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\pr.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\pu.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\slider.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\joints\universal.cpp">
+      <Filter>Source Files\joints</Filter>
+    </ClCompile>
+    <ClCompile Include="src\array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\capsule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_cylinder_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_cylinder_plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_cylinder_sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_cylinder_trimesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_libccd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_quadtreespace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_sapspace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_space.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_ccylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_disabled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_distance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_gimpact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_opcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_trimesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_trimesh_trimesh_new.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collision_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\convex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\export-dif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fastdot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fastldlt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fastlsolve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fastltsolve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\heightfield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nextafterf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\odeinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\odemath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\odeou.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\odetls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\plane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quickstep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\step.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\joints\amotor.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\ball.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\contact.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\fixed.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\hinge.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\hinge2.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\joint.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\joint_internal.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\joints.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\lmotor.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\null.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\piston.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\plane2d.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\pr.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\pu.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\slider.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\joints\universal.h">
+      <Filter>Source Files\joints</Filter>
+    </ClInclude>
+    <ClInclude Include="src\array.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_kernel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_libccd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_space_internal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_std.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_transform.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_trimesh_colliders.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_trimesh_internal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\heightfield.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lcp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mat.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\obstack.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\odeou.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\odetls.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\quickstep.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\step.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\collision_space.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\collision_trimesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\compatibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\contact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\export-dif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\mass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\ode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odeconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odecpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odecpp_collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odeinit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odemath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\odemath_legacy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\rotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ode\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\config.h.origin">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
