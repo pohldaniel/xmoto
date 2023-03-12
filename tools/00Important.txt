@@ -1,0 +1,6 @@
+Using the 
+
+	xmoto --pack
+	
+command generates a malformed xmoto.bin package. As workaround I go with the xmoto.bin from the official release.
+This also happens be using the xmoto.exe from the officail release.
