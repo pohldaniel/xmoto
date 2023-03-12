@@ -176,9 +176,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\libsimd\x64\Release\jsimd.obj">
-      <Filter>Object Libraries</Filter>
-    </Object>
     <Object Include="..\libsimd\x64\Release\jccolor-avx2.obj">
       <Filter>Object Files</Filter>
     </Object>
@@ -259,6 +256,9 @@
     </Object>
     <Object Include="..\libsimd\x64\Release\jsimdcpu.obj">
       <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="..\libsimd\x64\Release\jsimd.obj">
+      <Filter>Object Libraries</Filter>
     </Object>
   </ItemGroup>
 </Project>

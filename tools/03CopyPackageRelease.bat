@@ -1,1 +1,0 @@
-copy ..\xmoto\xmoto.bin ..\x64\Release
