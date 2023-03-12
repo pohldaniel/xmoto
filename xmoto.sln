@@ -81,6 +81,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsimd", "libsimd\libsimd.vcxproj", "{4547BDE1-4AF8-41C9-A954-833DB3CE14BA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "libjpeg\libjpeg.vcxproj", "{55516721-6539-4D2C-8284-E1118EE468C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4547BDE1-4AF8-41C9-A954-833DB3CE14BA} = {4547BDE1-4AF8-41C9-A954-833DB3CE14BA}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsqlite3", "libsqlite3\libsqlite3.vcxproj", "{31E9C0D5-1301-48E1-B562-0FEA5DECD9D6}"
 EndProject
