@@ -87,6 +87,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsimd32", "libsimd32\libsimd32.vcxproj", "{47830CD7-C878-4407-9DD4-048F9B034543}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg32", "libjpeg32\libjpeg32.vcxproj", "{CB49C1D0-90FA-40A8-8FE2-A1E9E24DFFE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47830CD7-C878-4407-9DD4-048F9B034543} = {47830CD7-C878-4407-9DD4-048F9B034543}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
