@@ -1,0 +1,2 @@
+//this project supports just the x64 build
+//for the x86 build use the .asm files out of libsimd/src/i386
